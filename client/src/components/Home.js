@@ -5,7 +5,7 @@ import NewCamper from "./NewCamper";
 function Home() {
   const [campers, setCampers] = useState([]);
   const [activities, setActivities] = useState([]);
-
+  console.log(activities);
   useEffect(() => {
     fetch("/activities")
       .then((r) => r.json())
